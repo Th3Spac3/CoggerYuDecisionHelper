@@ -5,7 +5,7 @@ The repository presents calculation of optimal alternatives in multicriteria tas
 The project is completed during the Descision Making course at SPbPU Institute of Computer Science and Cybersecurity (SPbPU ICSC).
 
 # Persons
-The main contributor of the project is Artem A. Lazarenko, a student of SPbPU ICSC.
+The main contributor of the project is [Artem A. Lazarenko](https://github.com/Th3Spac3), a student of SPbPU ICSC.
 
 The advisor and minor contributor is [Vladimir A. Parkhomenko](https://github.com/ParkhomenkoV) a seniour lecturer of SPbPU ICSC.
 

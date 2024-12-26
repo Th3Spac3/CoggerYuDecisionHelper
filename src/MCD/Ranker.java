@@ -12,7 +12,7 @@ public class Ranker {
 
     public static ChoiceMethod method = ChoiceMethod.CoggerYu;
 
-    private static Double answerToRelation(Integer answer){
+    public static Double answerToRelation(Integer answer){
         return Math.pow(P, -answer+5);
     }
 
@@ -117,7 +117,7 @@ public class Ranker {
         for(int i = 0; i < result.length; i++) System.out.printf("g%d score: %f\n", i+1, result[i]);
     }
 
-    private static double[][] EigenValues(Matrix matrix){
+    public static double[][] EigenValues(Matrix matrix){
         double[][] buff = matrix.getArray();
         double[][] result = new double[buff.length][1];
         for(int i = 0; i < buff.length; i++){
@@ -134,7 +134,7 @@ public class Ranker {
         for(int i = 0; i < vector.length; i++) vector[i] /= sum;
         return vector;
     }
-    private static Double[] NormalizeVector(Double[] vector, Integer optimization){
+    public static Double[] NormalizeVector(Double[] vector, Integer optimization){
         Double sum = 0d;
         for(int i = 0; i < vector.length; i++) sum+= vector[i];
         for(int i = 0; i < vector.length; i++) vector[i] = optimization*(1 - (vector[i]/sum) - (vector.length-2d)/vector.length)+(1-optimization)*(vector[i]/sum);
